@@ -1,7 +1,7 @@
 import "./footer.css";
 
 function Footer() {
-  return <p>Organs are expensive</p>;
+  return <p>Here's the footer</p>;
 }
 
 export default Footer;
