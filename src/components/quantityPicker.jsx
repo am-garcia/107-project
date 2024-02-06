@@ -2,18 +2,33 @@ import "./quantityPicker.css";
 import { useState } from "react"; //this is how we use state variables
 
 function QuantityPicker() {
+  const [quantity, setQuantity] = useState(1); //1 is the initial value
+  //quantity = 10; this is what we dont want
+
+  //we want to use the function
+  setQuantity(10); //this function is passing the value we want to assign for the variable
+
   function decrease() {
+    if (quantity === 1) return;
+    let value = quantity - 1;
+    setQuantity(value);
+
     console.log("Decreasing");
   }
   function increase() {
+    let value = quantity + 1;
+    setQuantity(value);
+
     console.log("Increasing");
   }
 
   // curly brackets in HTML would be expecting javascript
   return (
-    <div>
-      <button onClick={decrease}>-</button>
-      <label>1</label>
+    <div className="quantityPicker">
+      <button disabled={quantity === 1} onClick={decrease}>
+        -
+      </button>
+      <label>{quantity}</label>
       <button onClick={increase}>+</button>
     </div>
   );
