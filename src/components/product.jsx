@@ -9,7 +9,7 @@ function Product(props) {
 
   return (
     <div className="product-container product">
-      <img src={"/images/" + props.data.img} alt=""></img>
+      <img src={"/images/" + props.data.image} alt="product"></img>
       <h4>{props.data.title}</h4>
 
       <div className="prices">

@@ -22,7 +22,7 @@ function Catalog() {
   }
 
   return (
-    <div>
+    <div className="catalog-container">
       <h1>Check out these {productState.length} amazing deals!!</h1>
       <h5>Page Status: {status}</h5>
       {productState.map((productArrow) => (
