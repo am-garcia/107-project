@@ -7,3 +7,26 @@
     border-radius: 4px;
 
 }
+.product .prices {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .product .prices .total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ee6c4d;
+  }
+  
+  .product .prices .price {
+    font-size: 16px;
+    color: #293241;
+  }
+
+  .product .controls {
+    padding: 10px;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    display:flex;
+    justify-content: space-between;
+  }

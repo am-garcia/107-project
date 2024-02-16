@@ -1,12 +1,28 @@
 import "./product.css";
 import QuantityPicker from "./quantityPicker";
+import { useEffect } from "react";
 
-function Product() {
+function Product(props) {
+  useEffect(function () {
+    console.log("Hello im a product");
+  });
+
   return (
-    <div className="product-container">
-      <img src="https://picsum.photos/160/220" alt=""></img>
-      <h4>Product Goes Here</h4>
-      <QuantityPicker />
+    <div className="product-container product">
+      <img src={"/images/" + props.data.img} alt=""></img>
+      <h4>{props.data.title}</h4>
+
+      <div className="prices">
+        <label className="total">${props.data.price.toFixed(2)}</label>
+        {/* .toLocaleString('en-US', { style: 'currency', currency: 'USD' }) this adds the $ and amount for items in the thousands amount */}
+        <label className="price">${props.data.price.toFixed(2)}</label>
+      </div>
+      <div className="controls">
+        <QuantityPicker />
+        <button type="button" className="btn btn-sm btn-dark">
+          Add to Cart
+        </button>
+      </div>
     </div>
   );
 }
