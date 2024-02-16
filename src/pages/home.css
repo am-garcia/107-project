@@ -1,12 +1,17 @@
-.home {
-
-}
-
 .home h1 {
-    color: darkcyan;
+    color: rgb(255, 255, 255);
     text-align: center;
+    font-size: 10rem;
+    font-family:cursive;
 }
 
 .home .main-img {
     width: 60em;
+}
+
+.home h3{
+    margin-top: 30px;
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(111, 155, 141);
 }

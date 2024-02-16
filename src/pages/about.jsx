@@ -2,12 +2,13 @@ import "./about.css";
 
 function About() {
   return (
-    <div>
-      <h1>About Super Fruit!</h1>
-      <img src="/images/farmedFruit.jpg" alt="fruit in bag" />
+    <div className="container">
+      <h1>About Us</h1>
+      <img src="/images/farmedFruit.jpg" alt="freshly picked fruit" />
       <p>
-        Here at Super Fruit, we're hella dope and so is our fruit! From sourcing
-        to distribution and more!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, eius
+        sequi! Incidunt voluptas, dicta soluta fugit odio laudantium possimus
+        qui eaque totam necessitatibus exercitationem a non nobis sed vel quam!
       </p>
     </div>
   );

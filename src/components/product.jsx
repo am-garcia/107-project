@@ -10,7 +10,7 @@ function Product(props) {
   return (
     <div className="product-container product">
       <img src={"/images/" + props.data.image} alt="product"></img>
-      <h4>{props.data.title}</h4>
+      <h4 className="product-title">{props.data.title}</h4>
 
       <div className="prices">
         <label className="total">${props.data.price.toFixed(2)}</label>
@@ -19,7 +19,7 @@ function Product(props) {
       </div>
       <div className="controls">
         <QuantityPicker />
-        <button type="button" className="btn btn-sm btn-dark">
+        <button type="button" className="btn btn-sm btn-success">
           Add to Cart
         </button>
       </div>

@@ -1,0 +1,20 @@
+.contact {
+    color: beige;
+}
+
+fieldset{
+    border: 1px solid white;
+    width: 400px;
+    margin: auto;
+    background-color: rgba(194, 255, 200, 0.418);
+    padding: 10px 0 10px 0;
+}
+
+.input-container{
+    padding: 2px;
+}
+
+.input-item{
+    margin: 4px 0 4px 0;
+    display: block;
+}

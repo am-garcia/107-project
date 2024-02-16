@@ -1,7 +1,5 @@
 .catalog-container {
     justify-content: center;
-    flex: auto;
-    margin: 2px;
-    border: 2px;
-    padding: 2px;
+    font-family: cursive;
+    color: beige;
 }

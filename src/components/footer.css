@@ -1,0 +1,22 @@
+footer {
+    position:fixed ;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 5rem;
+    background-color: rgb(138, 167, 138);
+    background-size: cover;
+    padding-top: 25px;
+}
+
+ul{
+    display:inline-flex;
+    font-family: cursive;
+    list-style: none;
+}
+
+.foot-link{
+    padding: 0 10px 0 10px;
+    color: beige;
+    text-decoration: none;
+}

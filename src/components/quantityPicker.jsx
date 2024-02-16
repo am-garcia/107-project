@@ -26,14 +26,16 @@ function QuantityPicker() {
   return (
     <div className="quantityPicker">
       <button
-        className="btn-outline-success"
+        className="btn-outline"
         disabled={quantity === 1}
         onClick={decrease}
       >
         -
       </button>
-      <label>{quantity}</label>
-      <button onClick={increase}>+</button>
+      <label className="quantity-label">{quantity}</label>
+      <button className="btn-outline" onClick={increase}>
+        +
+      </button>
     </div>
   );
 }

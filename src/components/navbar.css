@@ -1,3 +1,9 @@
 .navbar {
     background-color: darkkhaki;
 }
+
+.navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}

@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: url(https://images.nightcafe.studio/jobs/UWq1RuZcvaRh40UxqN17/UWq1RuZcvaRh40UxqN17--1--dm8n6.jpg?tr=w-1600,c-at_max) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 code {

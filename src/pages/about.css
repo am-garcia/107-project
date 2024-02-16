@@ -1,0 +1,22 @@
+.container{
+    margin-top: 20px;
+    padding: 20px 0 50px 0;
+}
+
+.container h1{
+    font-size: 100px;
+    font-family: cursive;
+    color: beige;
+}
+
+.container img{
+    border: 2px solid beige;
+    width: 500px;
+    size: 400px;
+}
+
+.container p{
+    padding:20px;
+    color: beige;
+    font-size: x-large;
+}
