@@ -26,7 +26,7 @@ function Catalog() {
       <h1>Check out these {productState.length} amazing deals!!</h1>
       <h5>Page Status: {status}</h5>
       {productState.map((productArrow) => (
-        <Product data={productArrow}></Product>
+        <Product key={productArrow._id} data={productArrow}></Product>
       ))}
     </div>
   );

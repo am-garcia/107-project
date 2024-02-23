@@ -1,7 +1,7 @@
 import "./quantityPicker.css";
 import { useState } from "react"; //this is how we use state variables
 
-function QuantityPicker() {
+function QuantityPicker(props) {
   const [quantity, setQuantity] = useState(1); //1 is the initial value
   //quantity = 10; this is what we dont want
 
@@ -12,12 +12,14 @@ function QuantityPicker() {
     if (quantity === 1) return;
     let value = quantity - 1;
     setQuantity(value);
+    props.onQuantityChange(value);
 
     console.log("Decreasing");
   }
   function increase() {
     let value = quantity + 1;
     setQuantity(value);
+    props.onQuantityChange(value);
 
     console.log("Increasing");
   }
